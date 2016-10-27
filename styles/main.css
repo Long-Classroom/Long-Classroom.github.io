@@ -1,1 +1,30 @@
-
+body {
+  background-color: red;
+}
+p {
+  color: aqua;
+}
+h1 {
+  color: aqua;
+  text-align: center;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: orange;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  background-color: #FF5800;
+}
