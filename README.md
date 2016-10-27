@@ -1,2 +1,2 @@
-# Long-Classroom.github.io
+# Long Classroom Website
 Classroom website for Mr. Long's classroom.
