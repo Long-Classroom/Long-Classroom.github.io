@@ -2,6 +2,10 @@
   font-family: WarWound;
   src: url("WarWound.otf");
 }
+@font-face {
+  font-family: Audiowide;
+  src: url("Audiowide-Regular.ttf");
+}
 body {
   background-color: red;
 }
@@ -11,6 +15,7 @@ p {
 h1 {
   color: aqua;
   text-align: center;
+  font-family: Audiowide;
 }
 .nav {
   list-style-type: none;
