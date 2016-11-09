@@ -6,6 +6,10 @@
   font-family: Audiowide;
   src: url("Audiowide-Regular.ttf");
 }
+@font-face {
+  font-family: CheapSign;
+  src: url("CheapSign.ttf");
+}
 body {
   background-color: red;
 }
