@@ -42,3 +42,20 @@ h1, a {
 .nav li a:hover {
   background-color: #FF5800;
 }
+.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: orange;
+}
+.sidenav li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-family: WarWound;
+  padding: 8px 16px;
+}
+.sidenav li a:hover {
+  background-color: #FF5800;
+}
