@@ -2,8 +2,36 @@
 <html>
   <head>
     <link rel="stylesheet" href="/styles/main.css" />
+    <script src="https://use.fontawesome.com/3a97473603.js"></script>
     <link rel="icon" href="/styles/science-icon-19049-16x16.ico" />
     <title>Lessons | Long Classroom Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+
+  var active1 = false;
+  var active2 = false;
+  var active3 = false;
+  var active4 = false;
+
+    $('.parent2').on('mousedown touchstart', function() {
+    
+    if (!active1) $(this).find('.test1').css({'background-color': 'gray', 'transform': 'translate(0px,125px)'});
+    else $(this).find('.test1').css({'background-color': 'dimGray', 'transform': 'none'}); 
+     if (!active2) $(this).find('.test2').css({'background-color': 'gray', 'transform': 'translate(60px,105px)'});
+    else $(this).find('.test2').css({'background-color': 'darkGray', 'transform': 'none'});
+      if (!active3) $(this).find('.test3').css({'background-color': 'gray', 'transform': 'translate(105px,60px)'});
+    else $(this).find('.test3').css({'background-color': 'silver', 'transform': 'none'});
+      if (!active4) $(this).find('.test4').css({'background-color': 'gray', 'transform': 'translate(125px,0px)'});
+    else $(this).find('.test4').css({'background-color': 'silver', 'transform': 'none'});
+    active1 = !active1;
+    active2 = !active2;
+    active3 = !active3;
+    active4 = !active4;
+      
+    });
+});
+    </script>
   </head>
   <body>
     <ul class="nav">
@@ -11,10 +39,17 @@
       <li><a href="/lessons">Lessons</a></li>
     </ul>
     <br />
-    <ul class="sidenav">
-      <li><a href="/lessons/gravity">Gravity</a></li>
-      <li><a href="/lessons/gravity-stories">Gravity Stories</a></li>
-      <li><a href="/lessons/heat-transfer">Heat Transfer</a></li>
-    </ul>
+    <div class="parent2">
+      <div class="test1"><a href="/"><i class="fa fa-home fa-2x"></i></a></div>
+      <div class="test2"><a href="/lessons/"><i class="fa fa-sticky-note-o fa-2x"></i></a></div>
+      <div class="mask2"><i class="fa fa-bars fa-3x"></i></div>
+    </div>
+    <br />
+    <br />
+    <div class="parent2">
+      <div class="test1"><a href="/lessons/gravity">Gravity</a></div>
+      <div class="test2"><a href="/lessons/gravity-stories">Gravity Stories</a></div>
+      <div class="mask2"><a href="/lessons/heat-transfer"><i class="fa fa-fire-extinguisher"></i></a></div>
+    </div>
   </body>
 </html>
