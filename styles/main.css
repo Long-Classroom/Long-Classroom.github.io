@@ -182,7 +182,12 @@ img:hover {
   display: block;
 }
 .dropdown-content p {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.dropdown-content p:last-child {
+  border-bottom: 1px solid black;
 }
 .dropbtn {
   background-color: aqua;
