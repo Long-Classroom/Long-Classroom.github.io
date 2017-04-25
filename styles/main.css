@@ -180,12 +180,14 @@ img:hover {
   display: block;
 }
 .dropdown-content p {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black;
 }
 .dropdown-content p:last-child {
-  border-bottom: 1px solid black;
+  border-bottom: none;
 }
 .dropbtn {
   background-color: aqua;
