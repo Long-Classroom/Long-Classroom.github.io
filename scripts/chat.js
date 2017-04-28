@@ -8,7 +8,7 @@ function getStateOfChat() {
 		instanse = true;
 		$.ajax({
 			type: "POST",
-			url: "process.php",
+			url: "main.php",
 			data: {'function': 'getState', 'file': file},
 			dataType: "json",	
 			success: function(data) {state = data.state;instanse = false;}
@@ -20,7 +20,7 @@ function updateChat() {
 		instanse = true;
 		$.ajax({
 			type: "POST",
-			url: "process.php",
+			url: "main.php",
 			data: {'function': 'update','state': state,'file': file},
 			dataType: "json",
 			success: function(data) {
@@ -47,7 +47,7 @@ function sendChat(message, nickname) {
 	updateChat();
 	$.ajax({
 		type: "POST",
-		url: "process.php",
+		url: "main.php",
 		data: {'function': 'send','message': message,'nickname': nickname,'file': file},
 		dataType: "json",
 		success: function(data){
